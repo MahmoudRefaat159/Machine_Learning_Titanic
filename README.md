@@ -1,7 +1,24 @@
-The sinking of the Titanic is one of the most infamous shipwrecks in history.
 
-On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
+This project is a supervised machine learning solution that predicts whether a passenger survived the Titanic disaster.
+It uses the Kaggle Titanic dataset and includes the full pipeline of a real-world ML problem:
 
-While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
+✅ Key Features:
+Data Cleaning: Handled missing values (Age, Embarked, etc.) and extracted meaningful features (like Cabin letter).
 
-In this challenge, we ask you to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).# Machine_Learning_Titanic
+Feature Engineering: Converted categorical columns to numerical using Label Encoding and One-Hot Encoding.
+
+Exploratory Data Analysis (EDA): Analyzed patterns between features like Sex, Pclass, Age, Fare and survival.
+
+Modeling: Trained classification models like:
+
+RandomForestClassifier
+
+(optionally) Logistic Regression, Decision Trees, etc.
+
+Evaluation:
+
+Achieved ~88% accuracy on internal validation.
+
+Scored 0.76076 on Kaggle's public leaderboard.
+
+Deployment-ready pipeline: Custom functions to clean and prepare data consistently for train/test splits or external test files.
